@@ -26,7 +26,7 @@ h1 {
   border: 2px solid #ddd;
   border-radius: 8px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   cursor: pointer;
   position: relative;
   transition: border 0.3s;
@@ -55,15 +55,15 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:checked + .unit-details .radio-circle::after {
+input[type="radio"]:checked+.unit-details .radio-circle::after {
   content: '';
   width: 12px;
   height: 12px;
   background: #ff6d88;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 4px;
+  left: 4px;
 }
 
 .info {
@@ -125,6 +125,7 @@ input[type="radio"]:checked + .unit-details .radio-circle::after {
   justify-content: space-between;
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 18px;
 }
 
 .free-delivery-text {
@@ -200,4 +201,32 @@ input[type="radio"]:checked + .unit-details .radio-circle::after {
 
 .customization.hidden {
   display: none;
+}
+
+.infrmation {
+  position: relative;
+}
+
+.most_popular {
+  position: absolute;
+  top: -38px;
+  right: 0px;
+  background-color: #ff6d88;
+  padding: 10px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.price_tag {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+}
+
+.units_off {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
